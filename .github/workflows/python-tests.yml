@@ -8,6 +8,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: laboratories/cicd-documentation
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -24,4 +28,4 @@ jobs:
 
       - name: Run tests with pytest
         run: |
-          pytest systems-testing/laboratories/cicd-documentation/main.py
+          pytest main.py
