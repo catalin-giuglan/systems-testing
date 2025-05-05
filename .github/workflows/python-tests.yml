@@ -24,4 +24,4 @@ jobs:
 
       - name: Run tests with pytest
         run: |
-          pytest main.py
+          pytest systems-testing/laboratories/cicd-documentation/main.py
